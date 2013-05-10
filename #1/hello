@@ -1,0 +1,34 @@
+#!/usr/bin/env perl
+use Mojolicious::Lite;
+
+# Documentation browser under "/perldoc"
+plugin 'PODRenderer';
+
+get '/' => sub {
+  shift->render('hello');
+};
+
+get '/:nome/:sobrenome' => sub {
+  my $self = shift;
+  
+  $self->stash(
+    nome => uc $self->param('nome'),
+    sobrenome => uc $self->param('sobrenome')
+  );
+  $self->render('argumento');
+};
+
+app->start;
+
+#O RESTO DO ARQUIVO É O TEMPLATE
+__DATA__
+@@ layouts/teste.html.ep
+<h1><%= title %> </h1>
+<%= content %> Vai Corinthians!
+@@ hello.html.ep
+HELLO!
+
+@@ argumento.html.ep
+% title 'CORINTHIANS!';
+%layout 'teste';
+OI <%= $nome %> <%= $sobrenome %>!

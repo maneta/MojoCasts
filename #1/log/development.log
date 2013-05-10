@@ -1,0 +1,28 @@
+[Fri May 10 19:53:55 2013] [info] Listening at "http://*:3000".
+[Fri May 10 19:54:11 2013] [debug] Your secret passphrase needs to be changed!!!
+[Fri May 10 19:54:11 2013] [debug] GET /Daniel/Cesario (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31).
+[Fri May 10 19:54:11 2013] [debug] Routing to a callback.
+[Fri May 10 19:54:11 2013] [debug] Rendering template "argumento.html.ep" from DATA section.
+[Fri May 10 19:54:11 2013] [debug] Rendering template "layouts/teste.html.ep" from DATA section.
+[Fri May 10 19:54:11 2013] [debug] 200 OK (0.009640s, 103.734/s).
+[Fri May 10 19:56:13 2013] [info] Listening at "http://*:3000".
+[Fri May 10 19:56:54 2013] [debug] Your secret passphrase needs to be changed!!!
+[Fri May 10 19:56:54 2013] [debug] GET /Daniel/Cesario (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31).
+[Fri May 10 19:56:54 2013] [debug] Routing to a callback.
+[Fri May 10 19:56:54 2013] [debug] Rendering template "argumento.html.ep" from DATA section.
+[Fri May 10 19:56:54 2013] [error] Global symbol "$sobrenome_nao_existe" requires explicit package name at template argumento.html.ep from DATA section line 3.
+1: % title 'CORINTHIANS!';
+2: %layout 'teste';
+3: OI <%= $nome %> <%= $sobrenome_nao_existe %>!
+
+[Fri May 10 19:56:54 2013] [debug] Template "exception.development.html.ep" not found.
+[Fri May 10 19:56:54 2013] [debug] Template "exception.html.ep" not found.
+[Fri May 10 19:56:54 2013] [debug] Rendering inline template.
+[Fri May 10 19:56:54 2013] [debug] Rendering inline template.
+[Fri May 10 19:56:54 2013] [debug] 500 Internal Server Error (0.043075s, 23.215/s).
+[Fri May 10 19:58:32 2013] [debug] Your secret passphrase needs to be changed!!!
+[Fri May 10 19:58:32 2013] [debug] GET /Daniel/Cesario (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31).
+[Fri May 10 19:58:32 2013] [debug] Routing to a callback.
+[Fri May 10 19:58:32 2013] [debug] Rendering template "argumento.html.ep" from DATA section.
+[Fri May 10 19:58:32 2013] [debug] Rendering template "layouts/teste.html.ep" from DATA section.
+[Fri May 10 19:58:32 2013] [debug] 200 OK (0.007916s, 126.326/s).
