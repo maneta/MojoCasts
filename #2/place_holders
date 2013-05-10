@@ -1,0 +1,26 @@
+#!/usr/bin/env perl
+use Mojolicious::Lite;
+
+##Generic placeholder doesnt match a dot gives a 404 - (:argument)
+## Relaxed placedor catches a dot (.sobreome) acepts .
+## Wildcard Placehoders /*foo
+get '/:nome/*sobrenome' => {sobrenome => 'default'} =>sub {
+  my $self = shift;
+  $self->render('hello');
+};
+
+
+app->start;
+
+__DATA__
+
+@@ hello.html.ep
+<!doctype html>
+<html>
+  <head> <title>Placedoders</title> </head>
+  <body>
+    <li>
+      Hello <%= $nome %> <%= $sobrenome %>
+    </li>
+  </body>
+</html>
